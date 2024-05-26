@@ -1,0 +1,272 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(19, 19, 19);
+    background-color: #EAECD0;
+}
+
+main {
+    max-width: 1200px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.imagemCapa,
+.imagemRosto,
+.boxApresentacao {
+    position: absolute;
+}
+
+.imagemRosto,
+.logos {
+    object-fit: cover;
+    border-radius: 50px;
+    aspect-ratio: 1/1;
+}
+
+.imagemCapa {
+    z-index: -1;
+    height: 520px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 90%;
+    background-image: src=("C:\Users\angel\OneDrive\Área de Trabalho\Fundamentos do Front-end\Introdução a Criação de Websites com HTML5 e CSS3\projeto\logos png\ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
+}
+
+.boxContatos {
+    background-color: #c6c99d;
+    border-radius: 40px;
+    width: 800px;
+    height: 40px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.boxContatos a {
+    color: #0c0d05;
+    padding: 10px;
+}
+
+.conteinerimagemRosto {
+    display: flex;
+    justify-content: center;
+}
+
+.imagemRosto {
+    width: 5.5cm;
+    background-color: #0c0d05;
+    border-radius: 100px;
+    margin-top: 200px;
+}
+
+.conteinerboxApresentacao {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+}
+
+.boxApresentacao {
+    margin-top: 300px;
+    padding: 40px;
+    background-color: #a8ab84;
+    border-radius: 20px;
+    width: 800px;
+    box-shadow: 6px 6px 10px #090909;
+    z-index: -1;
+}
+
+.boxApresentacao h1 {
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.boxApresentacao p {
+    font-size: 17px;
+}
+
+.formacaoAcademica {
+    text-align: center;
+    margin-top: 340px;
+}
+
+.Idioma {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.boxExperienciasprofissionais {
+    z-index: 1;
+    margin-top: 80px;
+    background-color: #090909;
+    background-image: linear-gradient(to right, #a4a781, rgb(231, 234, 200));
+    width: 100%;
+    border-color: #EAECD0;
+}
+
+.Experiencias {
+    margin-left: 50px;
+}
+
+.Experiencias p {
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.habilidadesTecnicas h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.habilidadesLinguagens h3,
+.habilidadesFerramentas h3 {
+    margin-left: 100px;
+}
+
+.habilidadesLinguagens h4,
+.habilidadesFerramentas h4 {
+    margin-left: 10px;
+}
+
+.habilidadesLinguagens p {
+    margin-left: 20px;
+}
+
+.habilidadesLinguagens table,
+.habilidadesFerramentas table {
+    margin-left: 150px;
+}
+
+#conteinerExperiencias {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#container>div {
+    width: 50%;
+}
+
+.logos {
+    width: 45px;
+    background-color: white;
+    border-color: #0c0d05;
+    border-style: solid;
+    border-width: 7px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #0c0d05;
+    padding: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 35px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    .boxApresentacao p {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .habilidadesTecnicas {
+        margin-top: 100px;
+    }
+
+    .habilidadesTecnicas h2 {
+        margin-top: 10px;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #container>div {
+        width: 100%;
+    }
+
+    .imagemRosto {
+        margin-top: 190px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 35px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .boxApresentacao p {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .lista {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formacaoAcademica {
+        margin-top: 850px;
+    }
+
+    .boxApresentacao p {
+        font-size: 40px;
+    }
+}
